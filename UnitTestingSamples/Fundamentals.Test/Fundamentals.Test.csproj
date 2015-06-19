@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EE19DF2-CF0F-4D26-B70C-F7250DC9BDC0}</ProjectGuid>
+    <ProjectGuid>{AAA9E6A3-E91C-4848-A4B6-C1ADCD7E4861}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Foundations.Test</RootNamespace>
-    <AssemblyName>Foundations.Test</AssemblyName>
+    <RootNamespace>Fundamentals.Test</RootNamespace>
+    <AssemblyName>Fundamentals.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,19 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BankTest.cs" />
+    <Compile Include="GettingStarted\CoffeeStoreTest.cs" />
+    <Compile Include="Mocking\CoffeeStoreTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{ad00af68-9373-418b-987f-fb2de6c35552}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Foundations\Foundations.csproj">
-      <Project>{9d0422af-5239-4c4c-8eb4-1fb5cd9658ed}</Project>
-      <Name>Foundations</Name>
+    <ProjectReference Include="..\Fundamentals\Fundamentals.csproj">
+      <Project>{CA4AC4EE-38F3-46F6-BCAA-6BF30C4525AC}</Project>
+      <Name>Fundamentals</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

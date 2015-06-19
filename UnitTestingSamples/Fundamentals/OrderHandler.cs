@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common
+namespace Fundamentals
 {
-	public class Account
+	public class OrderHandler : IOrderHandler
 	{
-		public string AccountId { get; set; }
-		public int Balance { get; set; }
+		public void CreateOrder()
+		{
+			
+		}
 	}
 }
