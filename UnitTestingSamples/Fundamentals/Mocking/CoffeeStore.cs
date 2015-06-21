@@ -7,12 +7,19 @@ namespace Fundamentals.Mocking
     {
 		private readonly Cart _cart;
 		private readonly IOrderHandler _orderHandler;
+		private readonly ISuppy _supply;
 
-	    public CoffeeStore(IOrderHandler orderHandler)
+	    public CoffeeStore(IOrderHandler orderHandler, ISuppy supply)
 	    {
 			_cart = new Cart();
 			_orderHandler = orderHandler;
+			_supply = supply;
 	    }
+
+		public IEnumerable<IStoreItem> GetAllItems()
+		{
+			return _supply.GetAllItems();
+		}
 
 	    public void AddToCart(IStoreItem item)
 	    {
@@ -43,11 +50,6 @@ namespace Fundamentals.Mocking
 
 			var itemToRemove = _cart.First(i => i.ProductId == item.ProductId);
 			_cart.Remove(itemToRemove);
-	    }
-
-	    public IEnumerable<IStoreItem> GetCurrentItems()
-	    {
-			return new List<IStoreItem>();
 	    }
 
 	    public void Checkout()

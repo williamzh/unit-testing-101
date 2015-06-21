@@ -20,7 +20,7 @@ namespace Fundamentals.GettingStarted
 			Assert.IsFalse(store.GetCartItems().Any());
 		}
 
-		// Exercise: Complete the following test so that it verifies that no item
+		// Exercise 1.1: Complete the following test so that it verifies that no item
 		// is removed if the item doesn't exist in the cart.
 		[TestMethod]
 		public void RemoveFromCart_ItemDoesntExist_DoesntRemoveFromCart()
@@ -36,7 +36,7 @@ namespace Fundamentals.GettingStarted
 
 		}
 
-		// Exercise: Complete the following test so that it verifies that the cart
+		// Exercise 1.2: Complete the following test so that it verifies that the cart
 		// is emptied when checking out, given that there are items in it.
 		[TestMethod]
 		public void Checkout_CartContainsItems_EmptiesCart()
@@ -51,21 +51,5 @@ namespace Fundamentals.GettingStarted
 
 
 		}
-
-		// Exercise: Complete the following test so that it verifies that the cart
-		// isn't emptied when checking out, given that there are no items in it.
-		[TestMethod]
-		public void Checkout_CartIsEmpty_DoesntCreateOrder()
-		{
-			// Arrange
-
-
-			// Act
-
-
-			// Assert
-
-
-		} 
 	}
 }

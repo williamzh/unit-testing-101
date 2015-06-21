@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Cart.cs" />
     <Compile Include="GettingStarted\CoffeeStore.cs" />
+    <Compile Include="ISuppy.cs" />
     <Compile Include="IStoreItem.cs" />
     <Compile Include="Mocking\CoffeeStore.cs" />
     <Compile Include="IOrderHandler.cs" />
